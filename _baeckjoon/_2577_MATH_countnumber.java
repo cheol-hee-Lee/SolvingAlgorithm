@@ -7,8 +7,6 @@ A × B × C = 150 × 266 × 427 = 17037300 이 되고,
 
 계산한 결과 17037300 에는 0이 3번, 1이 1번, 3이 2번, 7이 2번 쓰였다.
 */
-
-
 import java.util.Scanner;
 
 public class Main {
@@ -30,11 +28,6 @@ public class Main {
 		}
 
 		for (int i = 0; i < array.length; i++) {
-			System.out.print(array[i] + " ");
-		}
-		System.out.println();
-
-		for (int i = 0; i < array.length; i++) {
 			for (int j = 0; j < cnt.length; j++) {
 				if (array[i] == j) {
 					cnt[j]++;
@@ -43,7 +36,7 @@ public class Main {
 		}
 
 		for (int i = 0; i < cnt.length; i++) {
-			System.out.println(i + " : " + cnt[i]);
+			System.out.println(cnt[i]);
 		}
 
 	}
