@@ -13,7 +13,7 @@ int main()
     
     for (int i = 0; i < T; i++) {
         cin >> ox[i];
-        // 문자열 길이 
+        // score 계산
         for (int j = 0; j < ox[i].length(); j++) {
             if (ox[i][j] == 'O') {
                 correct++;
@@ -22,6 +22,8 @@ int main()
                 correct = 0;
             }
         }
+        // mistake : initialize correct value
+        correct = 0;
     }
     
     
